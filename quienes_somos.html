@@ -11,34 +11,6 @@
 </head>
 
 <body>
-
-
-    <!-- Ventana Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <p>Correo enviado exitosamente.</p>
-        </div>
-    </div>
-    <script>
-        function enviarFormulario() {
-            // Aquí puedes realizar cualquier validación adicional antes de enviar el formulario
-            // Si todo está bien, muestra la ventana modal
-            mostrarModal();
-            return false; // Evita que el formulario se envíe de manera convencional
-        }
-    
-        function mostrarModal() {
-            var modal = document.getElementById('myModal');
-            modal.style.display = 'block';
-        }
-    
-        function cerrarModal() {
-            var modal = document.getElementById('myModal');
-            modal.style.display = 'none';
-        }
-    </script>
-
     <header>
         <nav>
             <div class="nav-container">
@@ -108,7 +80,7 @@
                     <h1>¿Quieres formar parte de nuestro equipo?</h1>
                     <h2>Llena el siguiente formulario:</h2>
                     <div class="form-somos">
-                        <form method="post" action="somos.php" onsubmit="return enviarFormulario()">
+                        <form method="post" action="somos.php">
                             <ul>
                                 <label for="">Ingresa tu correo</label>
                                 <input type="text" name="correo" required>

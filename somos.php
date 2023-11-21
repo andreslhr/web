@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
 
     // Correo al que se enviarán los datos
-    $destinatario = "tu_correo@example.com";
+    $destinatario = "andreslhr2016@gmail.com";
 
     // Asunto del correo
     $asunto = "Nuevo formulario de contacto";
